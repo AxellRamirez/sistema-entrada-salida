@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undécimo Grado - Sección 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_11-2.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Horario de Undécimo Grado - Sección 11-2</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Clase</th>
+                    <th>Día</th>
+                    <th>Hora Inicio</th>
+                    <th>Hora Fin</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                <tr>
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.nombre }}</td>
+                    <td>{{ item.dia }}</td> <!-- Aquí se traduce el día al español -->
+                    <td>{{ item.hora_inicio }}</td>
+                    <td>{{ item.hora_fin }}</td>
+                    <td>
+                        <a href="/edit/{{ item.id }}">Editar</a>
+                        <a href="/delete/{{ item.id }}">Eliminar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <form action="/add" method="post">
+            <input type="hidden" name="seccion" value="11-2">
+            <input type="text" name="clase_id" placeholder="ID de la Clase" required>
+            <input type="text" name="dia" placeholder="Día" required>
+            <input type="time" name="hora_inicio" required>
+            <input type="time" name="hora_fin" required>
+            <button type="submit">Agregar</button>
+        </form>
+        <a href="{{ url_for('horarios') }}">Volver al listado de horarios</a>
+    </div>
+</body>
+</html>

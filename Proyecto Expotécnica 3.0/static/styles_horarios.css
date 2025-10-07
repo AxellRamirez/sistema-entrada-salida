@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F2E7; /* Beige Claro */
+    color: #4A4A4A; /* Gris oscuro */
+}
+
+header {
+    margin-bottom: 20px;
+    background-color: #4A90E2; /* Azul Medio */
+    color: #FFFFFF; /* Blanco */
+    padding: 10px 0;
+}
+
+h1 {
+    color: #FFFFFF; /* Blanco */
+}
+
+.horarios-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.grado {
+    background-color: #FFFFFF; /* Blanco */
+    padding: 20px;
+    border: 1px solid #B5E3B5; /* Verde Pastel */
+    border-radius: 5px;
+    width: calc(50% - 20px); /* 50% menos el espacio entre los elementos */
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.grado h2 {
+    color: #4A90E2; /* Azul Medio */
+    margin-bottom: 10px;
+}
+
+.grado a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #4A90E2; /* Azul Medio */
+    font-weight: bold;
+}
+
+.grado a:hover {
+    color: #F4A300; /* Naranja Suave */
+    text-decoration: underline;
+}

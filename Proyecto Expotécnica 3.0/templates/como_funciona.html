@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Funciona</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_como_funciona.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Cómo Funciona</h1>
+    </header>
+
+    <div class="container">
+        <h2>Descripción del Sistema</h2>
+        <div class="info-section">
+            <div class="info-box">
+                <h3>Registro de Asistencia</h3>
+                <p>El sistema utiliza tecnología NFC para registrar la asistencia de los estudiantes. Al escanear su tarjeta NFC, el sistema actualiza el estado de asistencia en tiempo real.</p>
+            </div>
+            <div class="info-box">
+                <h3>Notificaciones a Padres</h3>
+                <p>Los padres recibirán una notificación automática a través de WhatsApp cuando sus hijos registren su ingreso o salida del colegio.</p>
+            </div>
+            <div class="info-box">
+                <h3>Verificación de Horarios</h3>
+                <p>Los estudiantes pueden verificar sus horarios de clases y eventos importantes a través del sistema, manteniéndose informados y organizados.</p>
+            </div>
+            <div class="info-box">
+                <h3>Seguridad y Privacidad</h3>
+                <p>El sistema garantiza la seguridad y privacidad de los datos de los estudiantes, cumpliendo con las normativas de protección de datos.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="{{ url_for('index') }}">Volver a la página principal</a></p>
+    </footer>
+</body>
+</html>
+
+

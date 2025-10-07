@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Blanco */
+    color: #1A237E; /* Azul oscuro */
+}
+
+header {
+    margin-bottom: 20px;
+    background-color: #1A237E; /* Azul oscuro */
+    color: #FFFFFF; /* Blanco */
+    padding: 10px 0;
+}
+
+h1 {
+    color: #FFFFFF; /* Blanco */
+}
+
+.horarios-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.grado {
+    background-color: #FFFFFF; /* Blanco */
+    padding: 20px;
+    border: 1px solid #757575; /* Gris */
+    border-radius: 5px;
+    width: calc(50% - 20px); /* 50% menos el espacio entre los elementos */
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.grado h2 {
+    color: #1A237E; /* Azul oscuro */
+    margin-bottom: 10px;
+}
+
+.grado a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #1A237E; /* Azul oscuro */
+    font-weight: bold;
+}
+
+.grado a:hover {
+    color: #8B0000; /* Rojo oscuro */
+    text-decoration: underline;
+}
+
+

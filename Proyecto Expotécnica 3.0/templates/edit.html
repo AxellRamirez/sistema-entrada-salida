@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Horario</title>
+</head>
+<body>
+    <h1>Editar Horario</h1>
+    <form action="/edit/{{ data.id }}" method="post">
+        <input type="text" name="clase_id" value="{{ data.clase_id }}" required>
+        <input type="text" name="seccion" value="{{ data.seccion }}" required>
+        <input type="text" name="dia" value="{{ data.dia }}" required>
+        <input type="time" name="hora_inicio" value="{{ data.hora_inicio }}" required>
+        <input type="time" name="hora_fin" value="{{ data.hora_fin }}" required>
+        <button type="submit">Guardar</button>
+    </form>
+    <a href="/">Volver</a>
+</body>
+</html>

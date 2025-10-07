@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ingreso y Salida</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <a href="{{ url_for('static', filename='images/m4qAw1M.png') }}" target="_blank">
+            <img src="{{ url_for('static', filename='images/m4qAw1M.png') }}" width="30" height="30" alt="Descripción de la imagen">
+            </a> 
+            <h1>Sistema de Ingreso y Salida EduGuard</h1>
+                                  
+        </div>
+    </header>
+ 
+    <!-- Barra de navegación -->
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="{{ url_for('horarios') }}" class="nav-item">Ver Horarios</a></li>
+            <li><a href="{{ url_for('como_funciona') }}" class="nav-item">Cómo Funciona</a></li>
+        </ul>
+    </nav>
+ 
+    <!-- Contenido principal -->
+    <main>
+        <p>Bienvenido a EduGuard de Hoverway: El camino ágil a la seguridad escolar. Gestiona el ingreso y salida de forma segura y eficiente. </p>
+    </main>
+ 
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container">
+            <p>Hoverway - El camino ágil a la seguridad escolar. &copy; 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
